@@ -1,8 +1,11 @@
-pandas
+pandas (You can use pandas also but polars is quite fast)
+polars
+pyarrow # Dependency for polars
 notebook
 numpy
 scikit-learn
 matplotlib
+seaborn
 python-box==6.0.2
 pyYAML
 ensure==1.0.2
