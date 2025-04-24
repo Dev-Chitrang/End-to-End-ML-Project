@@ -1,19 +1,22 @@
 # End-to-End-ML-Project
 
-## Create virtual environment (python, uv, conda)
+## Create and activate virtual environment and install required packages (python).
 ```bash
-    1. python -m venv name_of_environment
-    2. uv venv --python 3.10 name_of_environment
-    3. conda create -n name_of_environment python=3.10 -y
+    python -m venv name_of_environment
+    .name_of_environment/Scripts/activate
+    pip install -r requirements.txt
 ```
-## activate virtual environment (python, uv, conda)
+
+## Create and activate virtual environment and install required packages (Conda).
 ```bash
-    1. .name_of_environment/Scripts/activate
-    2. .name_of_environment/Scripts/activate
-    3. conda activate name_of_environment
+    conda create -n name_of_environment python=3.10 -y
+    conda activate name_of_environment
+    pip install -r requirements.txt
 ```
-## Install the requirements
+
+## Create and activate virtual environment and install required packages (uv).
 ```bash
-    1. pip install -r requirements.txt
-    2. uv pip install -r requirements.txt
+    uv venv --python 3.10 name_of_environment
+    .name_of_environment/Scripts/activate
+    uv pip install -r requirements.txt
 ```
