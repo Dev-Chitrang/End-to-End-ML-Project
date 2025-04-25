@@ -4,6 +4,7 @@ import urllib.request as request
 import zipfile
 from MLProject import logger
 from MLProject.utils.common import get_size
+from pathlib import Path
 
 class DataIngestion:
     def __init__(self, config: DataIngestionConfig):
@@ -17,7 +18,7 @@ class DataIngestion:
             )
             logger.info(f"{filename} download! with the following info: \n{headers}")
         else:
-            logger.info(f"Filename already exists of size: {get_size(self.config.local_data_path)}")
+            logger.info(f"Filename already exists of size: {get_size(Path(self.config.local_data_path))}")
     
     def extract_zip(self):
         '''
