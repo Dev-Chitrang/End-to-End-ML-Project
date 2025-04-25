@@ -1,4 +1,4 @@
-pandas (You can use pandas also but polars is quite fast)
+pandas # (You can use pandas also but polars is quite fast)
 polars
 pyarrow # Dependency for polars
 notebook
