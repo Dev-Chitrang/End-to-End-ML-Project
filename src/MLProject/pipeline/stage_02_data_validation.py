@@ -11,8 +11,8 @@ class DataValidaionTrainingPipeline:
     def main(self):
         config = ConfigurationManager()
         data_validation_config = config.get_data_validation_config()
-        data_ingestion = DataValidation(config=data_validation_config)
-        data_ingestion.validate()
+        data_validation = DataValidation(config=data_validation_config)
+        data_validation.validate()
 
 
 if __name__ == '__main__':
